@@ -1,0 +1,6 @@
+.DS_Store
+1-merged.pdf
+Network Plan.png
+node_modules/
+.netlify/
+.env

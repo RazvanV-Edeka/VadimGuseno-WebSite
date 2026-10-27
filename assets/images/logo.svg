@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="90" viewBox="0 0 420 90" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Vadim Gusenov</title>
+  <desc id="logoDesc">Rechtsanwalt in Wien</desc>
+  <rect width="420" height="90" fill="none" />
+  <g fill="#121a26" font-family="Cormorant Garamond, Georgia, serif" font-size="18" font-weight="600" letter-spacing="1.8" text-anchor="middle">
+    <text x="210" y="32">VADIM GUSENOV</text>
+    <text x="210" y="67">RECHTSANWALT IN WIEN</text>
+  </g>
+</svg>
