@@ -113,7 +113,7 @@ const TRANSLATIONS = {
     "booking.call": "Direkt anrufen",
     "footer.contact": "Kontakt",
     "footer.instagram": "Instagram",
-    "footer.address": "Lerchenfelder Gürtel 45/11, 1160 Wien",
+    "footer.address": "Falkestraße 1/4B, 1010 Wien",
     "footer.bank": "Bankverbindung",
     "footer.owner": "Kontoinhaber: Rechtsanwalt Mag. Vadim Gusenov",
     "footer.impressum": "Impressum",
@@ -238,7 +238,7 @@ const TRANSLATIONS = {
     "booking.call": "Позвонить напрямую",
     "footer.contact": "Контакты",
     "footer.instagram": "Instagram",
-    "footer.address": "Lerchenfelder Gürtel 45/11, 1160 Wien",
+    "footer.address": "Falkestraße 1/4B, 1010 Wien",
     "footer.bank": "Банковские реквизиты",
     "footer.owner": "Владелец счета: Rechtsanwalt Mag. Vadim Gusenov",
     "footer.impressum": "Impressum",
@@ -277,7 +277,7 @@ function updateWhatsappLink() {
   whatsappLinks.forEach((link) => {
     const messageKey = link.dataset.whatsappKey || "wa.default";
     const message = t(messageKey) || t("wa.default");
-    const phoneNumber = link.dataset.whatsappNumber || "436704093793";
+    const phoneNumber = link.dataset.whatsappNumber || "436601017777";
     link.href = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
   });
 }
