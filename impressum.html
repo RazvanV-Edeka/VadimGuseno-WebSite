@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -28,26 +28,34 @@
     </script>
   </head>
   <body>
-    <div class="background-shape background-shape-left" aria-hidden="true"></div>
-    <div class="background-shape background-shape-right" aria-hidden="true"></div>
 
-    <header class="site-header">
-      <div class="container nav-wrap">
-        <a class="brand" href="index.html#top">
-          <img
-            class="brand-logo"
-            src="assets/images/logo.png"
-            alt="Kanzlei Logo"
-            width="120"
-            height="36"
-          />
-        </a>
-        <nav class="nav">
+    <header class="site-header is-solid" data-header data-header-fixed="solid">
+      <div class="header-inner">
+        <nav class="nav nav-main" id="site-nav">
           <a href="index.html#leistungen">Leistungen</a>
+          <a href="index.html#kanzlei">Über die Kanzlei</a>
           <a href="index.html#kontakt">Kontakt</a>
-          <a href="impressum.html">Impressum</a>
-          <a href="datenschutz.html">Datenschutz</a>
         </nav>
+
+        <a class="brand" href="index.html#top">
+          <span>Mag. Vadim Gusenov</span>
+          <span>Rechtsanwalt</span>
+        </a>
+
+        <div class="header-actions">
+          <a class="header-cta" href="index.html#kontakt">Termin</a>
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-controls="site-nav"
+            aria-expanded="false"
+            aria-label="Menü"
+            data-nav-toggle
+          >
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </div>
     </header>
 
@@ -129,33 +137,20 @@
           </section>
 
           <p class="legal-back-link">
-            <a class="btn btn-outline" href="index.html#kontakt">Zurück zur Startseite</a>
+            <a class="btn" href="index.html">Zurück zur Startseite</a>
           </p>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-grid reveal-up">
-        <div>
-          <h2>Kontakt</h2>
-          <p><a href="tel:+436601017777">+43 660 101 7777</a></p>
-          <p><a href="mailto:office@gusenov.com">office@gusenov.com</a></p>
-          <p>Falkestraße 1/4B, 1010 Wien</p>
-        </div>
-        <div>
-          <h3>Bankverbindung</h3>
-          <p>Kontoinhaber: Rechtsanwalt Mag. Vadim Gusenov</p>
-          <p>IBAN: AT46 2011 1821 1315 8300</p>
-          <p>BIC: GIBAATWWXXX</p>
-        </div>
+    <footer class="site-footer footer-slim">
+      <div class="container">
+        <p class="copyright">
+          © <span id="year"></span> Mag. Vadim Gusenov
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+        </p>
       </div>
-      <p class="legal-links">
-        <a href="impressum.html">Impressum</a>
-        <span aria-hidden="true">|</span>
-        <a href="datenschutz.html">Datenschutz</a>
-      </p>
-      <p class="copyright">© <span id="year"></span> Mag. Vadim Gusenov</p>
     </footer>
 
     <script src="script.js"></script>
