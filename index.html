@@ -98,21 +98,18 @@
     <main id="top">
       <section class="hero" aria-label="Mag. Vadim Gusenov">
         <div class="hero-slides" aria-hidden="true">
-          <div class="hero-slide is-active" style="background-image: url('assets/images/gusenov-kanzlei.jpg')"></div>
-          <div class="hero-slide" style="background-image: url('assets/images/gusenov-robe.jpg')"></div>
+          <div class="hero-slide is-active" style="--photo: url('assets/images/gusenov-kanzlei.jpg')"></div>
+          <div class="hero-slide" style="--photo: url('assets/images/gusenov-robe.jpg')"></div>
         </div>
         <div class="hero-overlay" aria-hidden="true"></div>
 
         <div class="hero-meta">
-          <span>1010 Wien</span>
           <span class="rule-label" data-i18n="hero.office">Rechtsanwaltskanzlei</span>
-          <span data-i18n="hero.focus">Strafrecht</span>
         </div>
 
         <div class="hero-content">
-          <h1 class="hero-title reveal-up">Mag. Vadim Gusenov</h1>
-          <p class="hero-role reveal-up delay-1" data-i18n="hero.role">Rechtsanwalt</p>
-          <p class="hero-lead reveal-up delay-2" data-i18n="hero.lead">
+          <h1 class="visually-hidden">Mag. Vadim Gusenov – Rechtsanwalt in Wien</h1>
+          <p class="hero-lead reveal-up" data-i18n="hero.lead">
             Anwaltliche Vertretung in zentralen Rechtsgebieten mit klarer
             Strategie, direkter Kommunikation und rascher Erreichbarkeit.
           </p>
@@ -332,7 +329,24 @@
       </div>
     </footer>
 
-    <a class="mobile-call-cta" href="tel:+436601017777" data-i18n="hero.call">Jetzt anrufen</a>
+    <div class="contact-bar">
+      <a class="contact-bar-call" href="tel:+436601017777" data-i18n="hero.call">Anrufen</a>
+      <a
+        class="contact-bar-wa"
+        href="https://wa.me/436601017777"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-whatsapp-link
+        data-whatsapp-key="wa.default"
+        data-whatsapp-number="436601017777"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z" />
+          <path d="M9 8.5c.2 2.9 2.6 5.8 5.8 6.5l1-1.4-1.9-1-1 .8c-1-.5-1.8-1.3-2.3-2.3l.8-1-1-1.9z" />
+        </svg>
+        <span>WhatsApp</span>
+      </a>
+    </div>
 
     <div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie-Hinweis" hidden>
       <p data-i18n-html="cookie.text">

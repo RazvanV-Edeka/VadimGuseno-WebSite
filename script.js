@@ -19,11 +19,9 @@ const TRANSLATIONS = {
     "nav.contact": "Kontakt",
     "nav.appointment": "Termin",
     "hero.office": "Rechtsanwaltskanzlei",
-    "hero.focus": "Strafrecht",
-    "hero.role": "Rechtsanwalt",
     "hero.lead":
       "Anwaltliche Vertretung in zentralen Rechtsgebieten mit klarer Strategie, direkter Kommunikation und rascher Erreichbarkeit.",
-    "hero.call": "Jetzt anrufen",
+    "hero.call": "Anrufen",
     "hero.trust": "Schnelle Reaktion, direkter Kontakt, diskrete Bearbeitung.",
     "hero.urgentTitle": "Notfall? Sofort anrufen.",
     "hero.urgentText":
@@ -105,11 +103,9 @@ const TRANSLATIONS = {
     "nav.contact": "Контакты",
     "nav.appointment": "Запись",
     "hero.office": "Адвокатская канцелярия",
-    "hero.focus": "Уголовное право",
-    "hero.role": "Адвокат",
     "hero.lead":
       "Юридическое представительство в ключевых областях права с четкой стратегией, прямой коммуникацией и быстрой обратной связью.",
-    "hero.call": "Позвонить сейчас",
+    "hero.call": "Позвонить",
     "hero.trust": "Быстрый ответ, прямой контакт, конфиденциальное сопровождение.",
     "hero.urgentTitle": "Экстренный случай? Звоните сразу.",
     "hero.urgentText":
