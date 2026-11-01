@@ -269,17 +269,13 @@ a {
   z-index: -1;
 }
 
-/* Desktop: text on the dark left half, portrait photos on the right half */
-.hero-slides {
-  left: 50%;
-}
-
+/* Photo fills the hero; text sits at the bottom, below the face */
 .hero-slide {
   position: absolute;
   inset: 0;
   background-color: var(--dark);
   background-size: cover;
-  background-position: center 22%;
+  background-position: center 15%;
   opacity: 0;
   transform: scale(1.08);
   transition: opacity 1600ms var(--ease), transform 9000ms linear;
@@ -291,9 +287,7 @@ a {
 }
 
 .hero-overlay {
-  left: 50%;
-  background: linear-gradient(90deg, var(--dark) 0%, rgba(13, 13, 13, 0.35) 22%, rgba(13, 13, 13, 0) 45%),
-    linear-gradient(180deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 22%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.35) 50%, rgba(0, 0, 0, 0.88) 80%);
 }
 
 .hero-meta {
@@ -319,16 +313,16 @@ a {
 }
 
 .hero-content {
-  align-self: center;
-  justify-self: start;
-  width: 50%;
-  padding: 3rem clamp(1.5rem, 4vw, 4rem);
+  align-self: end;
+  justify-self: center;
+  width: min(900px, calc(100% - 3rem));
+  padding: 3rem 0 1.5rem;
   text-align: center;
 }
 
 .hero-title {
   margin: 0;
-  font-size: clamp(2.6rem, 5.4vw, 5.6rem);
+  font-size: clamp(2.6rem, 5vw, 4.4rem);
   font-weight: 500;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -367,7 +361,6 @@ a {
   display: flex;
   justify-content: center;
   gap: 0.7rem;
-  width: 50%;
   padding-bottom: 5.5rem;
 }
 
@@ -387,7 +380,7 @@ a {
 
 .hero-scroll {
   position: absolute;
-  left: 25%;
+  left: 50%;
   bottom: 1.6rem;
   width: 1px;
   height: 3rem;
@@ -955,27 +948,6 @@ a {
   .hero-meta > :first-child,
   .hero-meta > :last-child {
     display: none;
-  }
-
-  /* Mobile: photo fills the hero, text sits at the bottom below the face */
-  .hero-slides,
-  .hero-overlay {
-    left: 0;
-  }
-
-  .hero-slide {
-    background-position: center 15%;
-  }
-
-  .hero-overlay {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.35) 50%, rgba(0, 0, 0, 0.88) 78%);
-  }
-
-  .hero-content {
-    align-self: end;
-    justify-self: center;
-    width: 100%;
-    padding-bottom: 1.5rem;
   }
 
   .hero-dots {
