@@ -428,7 +428,7 @@ a {
 
 .areas-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   border-top: 1px solid var(--ink);
 }
 
@@ -476,6 +476,35 @@ a {
   padding-left: 0.4rem;
 }
 
+/* List entries that have their own section further down the page */
+.area-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.area-link {
+  color: inherit;
+}
+
+.area-link::after {
+  content: "→";
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: opacity 200ms var(--ease), transform 200ms var(--ease);
+}
+
+.area-link:hover {
+  color: var(--ink);
+}
+
+.area-link:hover::after {
+  opacity: 1;
+  transform: none;
+}
+
 /* Fullwidth photo band */
 
 .image-band {
@@ -486,7 +515,7 @@ a {
   padding: 4rem 1.5rem;
   background-color: var(--dark);
   background-size: cover;
-  background-position: center 78%;
+  background-position: center 55%;
   background-attachment: fixed;
   isolation: isolate;
 }
@@ -523,13 +552,6 @@ a {
   top: calc(var(--header-h) + 2rem);
 }
 
-.split-body .lead {
-  font-family: var(--serif);
-  font-size: clamp(1.35rem, 2.2vw, 1.6rem);
-  line-height: 1.4;
-  color: var(--ink);
-}
-
 .list-title {
   margin-top: 2rem;
   font-size: 0.75rem;
@@ -563,12 +585,25 @@ a {
   background: var(--ink);
 }
 
-.note {
-  margin-top: 1.6rem;
-  padding-top: 1.2rem;
-  border-top: 1px solid var(--line);
-  font-size: 0.92rem;
-  color: var(--ink-mute);
+.service-list {
+  border-top: 1px solid var(--ink);
+}
+
+.service-item {
+  padding: 1.8rem 0 1.4rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.service-item .area-num {
+  margin-bottom: 0.6rem;
+}
+
+.service-item h3 {
+  margin-bottom: 0.6rem;
+}
+
+.service-item p {
+  margin: 0;
 }
 
 /* Über die Kanzlei */
